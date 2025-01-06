@@ -15,6 +15,10 @@ function createWindow () {
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
 
+  setInterval(() => {
+    mainWindow.setPosition(-47, -10)
+  }, 500)
+
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 }
